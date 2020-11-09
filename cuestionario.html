@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Cuestionario | Curso OVA. Proyecto Integrador. Desarrollo de un Objeto Virtual de Aprendizaje. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Priscilia Yazmín Heredia Castro" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Curso OVA. Proyecto Integrador. Desarrollo de un Objeto Virtual de Aprendizaje.</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Universidad Estatal de Sonora</a></li>
+   <li class="current-page-parent"><a href="actividad_de_aprendizaje_1.html" class="current-page-parent daddy">Actividad de aprendizaje 1</a>
+   <ul>
+      <li><a href="nuevas_tecnologas_en_el_procesamiento_de_alimentos.html" class="no-ch">Nuevas tecnologías en el procesamiento de alimentos</a></li>
+      <li><a href="actividad_de_lectura.html" class="no-ch">Actividad de lectura</a></li>
+      <li id="active"><a href="cuestionario.html" class="active no-ch">Cuestionario</a></li>
+      <li><a href="criterios_de_evaluacin.html" class="no-ch">Criterios de evaluación</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividad_de_lectura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="criterios_de_evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Cuestionario</h1></header>
+<article class="iDevice_wrapper QuizTestIdevice em_iDevice" id="id20">
+<script type="text/javascript">/*<![CDATA[*/
+var numQuestions = 5;
+var rawScore = 0;
+var actualScore = 0;
+var question0;
+var question1;
+var question2;
+var question3;
+var question4;
+var key0 = 0;
+var key1 = 0;
+var key2 = 0;
+var key3 = -2;
+var key4 = 1;
+function getAnswer()
+        {
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm20").key0b20[i].checked)
+               {
+                  question0 = document.getElementById("quizForm20").key0b20[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm20").key1b20[i].checked)
+               {
+                  question1 = document.getElementById("quizForm20").key1b20[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm20").key2b20[i].checked)
+               {
+                  question2 = document.getElementById("quizForm20").key2b20[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm20").key3b20[i].checked)
+               {
+                  question3 = document.getElementById("quizForm20").key3b20[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 4; i++)
+            {
+               if (document.getElementById("quizForm20").key4b20[i].checked)
+               {
+                  question4 = document.getElementById("quizForm20").key4b20[i].value;
+                  break;
+               }
+            }
+            }
+        function calcRawScore(){
+
+            if (question0 == key0)
+            {
+               rawScore++;
+            }
+            if (question1 == key1)
+            {
+               rawScore++;
+            }
+            if (question2 == key2)
+            {
+               rawScore++;
+            }
+            if (question3 == key3)
+            {
+               rawScore++;
+            }
+            if (question4 == key4)
+            {
+               rawScore++;
+            }
+        
+        }
+        
+        function calcScore2()
+        {
+            getAnswer();
+     
+            calcRawScore();
+            actualScore =  Math.round(rawScore / numQuestions * 100);
+            var id = "20";
+            document.getElementById("quizForm"+id).submitB.disabled = true;
+            var s = document.getElementById("quizFormScore"+id);
+                        var msg_str ="Su puntuación es %d%%";            msg_str = msg_str.replace("%d",actualScore).replace("%%","%");            if (s) { s.innerHTML = "<div class='feedback'><p>"+msg_str+"</p></div>"; } else { alert(msg_str); }
+           
+        }
+    /*]]>*/</script>
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cuestionario SCORM</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<form name="quizForm20" id="quizForm20" action="#" class="quiz-test-form">
+<input type="hidden" name="passrate" id="passrate-20" value="60" />
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion0b20" class="block iDevice_content">
+<p>Estudia los fundamentos científicos y las aplicaciones de los métodos utilizados para la selección, conservación, transformación, envasado y diversificación del los alimentos y para la obtención de nuevos productos alimenticios para el hombre</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b201" class="sr-av"><a href="#answer-key0b201">Opción 1</a></label><input type="radio" name="key0b20" id="key0b201" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b201">
+<div id="taoptionAnswer0q0b20" class="block iDevice_content">
+<p>Tecnología de alimentos</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b202" class="sr-av"><a href="#answer-key0b202">Opción 2</a></label><input type="radio" name="key0b20" id="key0b202" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b202">
+<div id="taoptionAnswer1q0b20" class="block iDevice_content">
+<p>Tecnologías emergentes</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b203" class="sr-av"><a href="#answer-key0b203">Opción 3</a></label><input type="radio" name="key0b20" id="key0b203" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b203">
+<div id="taoptionAnswer2q0b20" class="block iDevice_content">
+<p>Análisis de alimentos</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b204" class="sr-av"><a href="#answer-key0b204">Opción 4</a></label><input type="radio" name="key0b20" id="key0b204" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b204">
+<div id="taoptionAnswer3q0b20" class="block iDevice_content">
+<p>Conservación de alimentos</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion1b20" class="block iDevice_content">
+<p>Métodos y procesos térmicos o no térmicos de conservación, procesos alternativos o complementarios a los métodos tradicionales de conservación de alimentos.</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b201" class="sr-av"><a href="#answer-key1b201">Opción 1</a></label><input type="radio" name="key1b20" id="key1b201" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b201">
+<div id="taoptionAnswer0q1b20" class="block iDevice_content">
+<p>Tecnologías emergentes</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b202" class="sr-av"><a href="#answer-key1b202">Opción 2</a></label><input type="radio" name="key1b20" id="key1b202" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b202">
+<div id="taoptionAnswer1q1b20" class="block iDevice_content">
+<p>Calentamiento óhmico</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b203" class="sr-av"><a href="#answer-key1b203">Opción 3</a></label><input type="radio" name="key1b20" id="key1b203" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b203">
+<div id="taoptionAnswer2q1b20" class="block iDevice_content">
+<p>Técnicas de conservación</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b204" class="sr-av"><a href="#answer-key1b204">Opción 4</a></label><input type="radio" name="key1b20" id="key1b204" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b204">
+<div id="taoptionAnswer3q1b20" class="block iDevice_content">
+<p>Calentamiento por radiofrecuencias</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion2b20" class="block iDevice_content">
+<p>Se basa en el paso de corriente eléctrica a través de un cuerpo, como puede ser un alimento líquido/sólido, el cual sirve como una resistencia eléctrica en la cual el calor es generado.</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b201" class="sr-av"><a href="#answer-key2b201">Opción 1</a></label><input type="radio" name="key2b20" id="key2b201" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b201">
+<div id="taoptionAnswer0q2b20" class="block iDevice_content">
+<p>Calentamiento óhmico</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b202" class="sr-av"><a href="#answer-key2b202">Opción 2</a></label><input type="radio" name="key2b20" id="key2b202" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b202">
+<div id="taoptionAnswer1q2b20" class="block iDevice_content">
+<p>Calentamiento por radiofrecuencias</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b203" class="sr-av"><a href="#answer-key2b203">Opción 3</a></label><input type="radio" name="key2b20" id="key2b203" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b203">
+<div id="taoptionAnswer2q2b20" class="block iDevice_content">
+<p>Calentamiento por microondas</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b204" class="sr-av"><a href="#answer-key2b204">Opción 4</a></label><input type="radio" name="key2b20" id="key2b204" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b204">
+<div id="taoptionAnswer3q2b20" class="block iDevice_content">
+<p>Pulsos eléctricos</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion3b20" class="block iDevice_content">
+<p>Son los parámetros principales que determinan la distribución de la energía electromagnética durante el calentamiento dieléctrico; dependen de la composición, forma, tamaño y densidad del alimento, además del tiempo de almacenamiento, temperatura y frecuencia.</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b201" class="sr-av"><a href="#answer-key3b201">Opción 1</a></label><input type="radio" name="key3b20" id="key3b201" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b201">
+<div id="taoptionAnswer0q3b20" class="block iDevice_content">
+<p>Propiedades dieléctricas</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b202" class="sr-av"><a href="#answer-key3b202">Opción 2</a></label><input type="radio" name="key3b20" id="key3b202" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b202">
+<div id="taoptionAnswer1q3b20" class="block iDevice_content">
+<p>Conductividad eléctrica</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b203" class="sr-av"><a href="#answer-key3b203">Opción 3</a></label><input type="radio" name="key3b20" id="key3b203" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b203">
+<div id="taoptionAnswer2q3b20" class="block iDevice_content">
+<p>Calor específico</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b204" class="sr-av"><a href="#answer-key3b204">Opción 4</a></label><input type="radio" name="key3b20" id="key3b204" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b204">
+<div id="taoptionAnswer3q3b20" class="block iDevice_content">
+<p>Constante dieléctrica</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion4b20" class="block iDevice_content">
+<p>El proceso mediante el cual se transmite energía de un medio o material a otro de menor temperatura se como:</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b201" class="sr-av"><a href="#answer-key4b201">Opción 1</a></label><input type="radio" name="key4b20" id="key4b201" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b201">
+<div id="taoptionAnswer0q4b20" class="block iDevice_content">
+<p>Calor específico</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b202" class="sr-av"><a href="#answer-key4b202">Opción 2</a></label><input type="radio" name="key4b20" id="key4b202" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b202">
+<div id="taoptionAnswer1q4b20" class="block iDevice_content">
+<p>Transferencia de calor</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b203" class="sr-av"><a href="#answer-key4b203">Opción 3</a></label><input type="radio" name="key4b20" id="key4b203" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b203">
+<div id="taoptionAnswer2q4b20" class="block iDevice_content">
+<p>Conductividad eléctrica</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b204" class="sr-av"><a href="#answer-key4b204">Opción 4</a></label><input type="radio" name="key4b20" id="key4b204" value="3" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b204">
+<div id="taoptionAnswer3q4b20" class="block iDevice_content">
+<p>Constante dieléctrica</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<div class="block iDevice_buttons">
+<p><input type="submit" name="submitB" value="ENVIAR RESPUESTAS" /> <span class="js-hidden js-warning">Habilitar JavaScript</span></p>
+</div>
+<div id="quizFormScore20"></div>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividad_de_lectura.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="criterios_de_evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
